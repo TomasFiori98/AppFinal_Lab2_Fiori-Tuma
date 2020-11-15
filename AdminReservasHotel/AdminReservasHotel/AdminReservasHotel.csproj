@@ -58,8 +58,83 @@
     <Compile Include="Model\Huesped.cs" />
     <Compile Include="Model\Reserva.cs" />
     <Compile Include="Model\Usuario.cs" />
+    <Compile Include="PLayers\frmAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLayers\frmAdministrador.Designer.cs">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLayers\frmConsultaDisponibilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLayers\frmConsultaDisponibilidad.Designer.cs">
+      <DependentUpon>frmConsultaDisponibilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLayers\frmConsultaReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLayers\frmConsultaReserva.Designer.cs">
+      <DependentUpon>frmConsultaReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLayers\frmCrearAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLayers\frmCrearAdmin.Designer.cs">
+      <DependentUpon>frmCrearAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLayers\frmCrearReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLayers\frmCrearReserva.Designer.cs">
+      <DependentUpon>frmCrearReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLayers\frmEliminarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLayers\frmEliminarReserva.Designer.cs">
+      <DependentUpon>frmEliminarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLayers\frmHuesped.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLayers\frmHuesped.Designer.cs">
+      <DependentUpon>frmHuesped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PLayers\frmIngresoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PLayers\frmIngresoAdmin.Designer.cs">
+      <DependentUpon>frmIngresoAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLayers\frmAdministrador.resx">
+      <DependentUpon>frmAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLayers\frmConsultaDisponibilidad.resx">
+      <DependentUpon>frmConsultaDisponibilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLayers\frmConsultaReserva.resx">
+      <DependentUpon>frmConsultaReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLayers\frmCrearAdmin.resx">
+      <DependentUpon>frmCrearAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLayers\frmCrearReserva.resx">
+      <DependentUpon>frmCrearReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLayers\frmEliminarReserva.resx">
+      <DependentUpon>frmEliminarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLayers\frmHuesped.resx">
+      <DependentUpon>frmHuesped.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PLayers\frmIngresoAdmin.resx">
+      <DependentUpon>frmIngresoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
