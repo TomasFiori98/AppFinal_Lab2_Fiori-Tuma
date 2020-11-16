@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminReservasHotel.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,16 @@ namespace AdminReservasHotel.PLayers
             InitializeComponent();
         }
 
-        
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnCrearNuevoAdmin_Click(object sender, EventArgs e)
+        {
+            frmCrearAdmin formAdmin = new frmCrearAdmin();
+            formAdmin.ShowDialog(this);
+            
+        }
     }
 }

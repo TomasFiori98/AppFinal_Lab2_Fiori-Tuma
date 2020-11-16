@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminReservasHotel.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,23 @@ namespace AdminReservasHotel.PLayers
         public frmCrearAdmin()
         {
             InitializeComponent();
+        }
+
+        private void btnCrearAdmin_Click(object sender, EventArgs e)
+        {
+            CrearUsuario crear_usuario = new CrearUsuario(true);
+            crear_usuario.CreadorUsuario(this);
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnVerificarCrearAdmin_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
