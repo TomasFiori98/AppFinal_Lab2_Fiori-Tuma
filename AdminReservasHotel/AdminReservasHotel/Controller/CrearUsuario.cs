@@ -1,5 +1,4 @@
-﻿using AdminReservasHotel.AdministradoressDataSetTableAdapters;
-using AdminReservasHotel.Model;
+﻿using AdminReservasHotel.Model;
 using AdminReservasHotel.PLayers;
 using System;
 using System.Collections.Generic;
@@ -31,7 +30,7 @@ namespace AdminReservasHotel.Controller
             if (this.admin_huesped) {
                 
                 string clave = form.textBoxClave.Text;
-                //DatosAdministradoresTableAdapter.Insertar(nombre, apellido, dni,correo, fecha_nacimiento, clave);
+                //administradoresTableAdapter.InsertQuery(nombre, apellido, correo, dni, fecha_nacimiento, clave);
                 Administrador admin = new Administrador(nombre, apellido, correo, dni, fecha_nacimiento, clave);
                 form.textBoxClave.Text = "";
                 MessageBox.Show("Administrador creado con extio!!!", "Realizado");

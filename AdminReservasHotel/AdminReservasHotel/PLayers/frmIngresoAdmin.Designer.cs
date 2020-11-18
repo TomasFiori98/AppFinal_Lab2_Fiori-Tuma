@@ -60,7 +60,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(130, 28);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(181, 20);
             this.textBox1.TabIndex = 2;
@@ -68,7 +68,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(130, 60);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(181, 20);
             this.textBox2.TabIndex = 3;
@@ -76,17 +76,18 @@
             // btnIngresarAdmin
             // 
             this.btnIngresarAdmin.Location = new System.Drawing.Point(121, 92);
-            this.btnIngresarAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresarAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.btnIngresarAdmin.Name = "btnIngresarAdmin";
             this.btnIngresarAdmin.Size = new System.Drawing.Size(90, 29);
             this.btnIngresarAdmin.TabIndex = 4;
             this.btnIngresarAdmin.Text = "Ingresar";
             this.btnIngresarAdmin.UseVisualStyleBackColor = true;
+            this.btnIngresarAdmin.Click += new System.EventHandler(this.btnIngresarAdmin_Click);
             // 
             // btnCrearNuevoAdmin
             // 
             this.btnCrearNuevoAdmin.Location = new System.Drawing.Point(76, 134);
-            this.btnCrearNuevoAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrearNuevoAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrearNuevoAdmin.Name = "btnCrearNuevoAdmin";
             this.btnCrearNuevoAdmin.Size = new System.Drawing.Size(180, 29);
             this.btnCrearNuevoAdmin.TabIndex = 5;
@@ -97,7 +98,7 @@
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(130, 180);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(71, 29);
             this.btnSalir.TabIndex = 6;
@@ -118,7 +119,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmIngresoAdmin";
             this.Text = "frmIngresoAdmin";
             this.ResumeLayout(false);

@@ -16,4 +16,4 @@ D:\U.D.A\Segundo cuatrimestre\Laboratotio 2\Ejercicios\ExamenFinal\AppFinal_Lab2
 D:\U.D.A\Segundo cuatrimestre\Laboratotio 2\Ejercicios\ExamenFinal\AppFinal_Lab2_Fiori-Tuma\AdminReservasHotel\AdminReservasHotel\obj\Debug\AdminReservasHotel.csproj.CoreCompileInputs.cache
 D:\U.D.A\Segundo cuatrimestre\Laboratotio 2\Ejercicios\ExamenFinal\AppFinal_Lab2_Fiori-Tuma\AdminReservasHotel\AdminReservasHotel\obj\Debug\AdminReservasHotel.exe
 D:\U.D.A\Segundo cuatrimestre\Laboratotio 2\Ejercicios\ExamenFinal\AppFinal_Lab2_Fiori-Tuma\AdminReservasHotel\AdminReservasHotel\obj\Debug\AdminReservasHotel.pdb
-D:\U.D.A\Segundo cuatrimestre\Laboratotio 2\Ejercicios\ExamenFinal\AppFinal_Lab2_Fiori-Tuma\AdminReservasHotel\AdminReservasHotel\bin\Debug\Administradoress.accdb
+D:\U.D.A\Segundo cuatrimestre\Laboratotio 2\Ejercicios\ExamenFinal\AppFinal_Lab2_Fiori-Tuma\AdminReservasHotel\AdminReservasHotel\bin\Debug\BaseDeDatos.accdb

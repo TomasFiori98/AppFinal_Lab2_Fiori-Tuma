@@ -39,69 +39,77 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(111, 24);
+            this.label1.Location = new System.Drawing.Point(83, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 17);
+            this.label1.Size = new System.Drawing.Size(141, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido de vuelta admin!";
             // 
             // btnConsultarReserva
             // 
-            this.btnConsultarReserva.Location = new System.Drawing.Point(161, 77);
+            this.btnConsultarReserva.Location = new System.Drawing.Point(121, 63);
+            this.btnConsultarReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConsultarReserva.Name = "btnConsultarReserva";
-            this.btnConsultarReserva.Size = new System.Drawing.Size(212, 49);
+            this.btnConsultarReserva.Size = new System.Drawing.Size(159, 40);
             this.btnConsultarReserva.TabIndex = 1;
             this.btnConsultarReserva.Text = "Consultar reserva";
             this.btnConsultarReserva.UseVisualStyleBackColor = true;
             // 
             // btnConsultarDisponibilidad
             // 
-            this.btnConsultarDisponibilidad.Location = new System.Drawing.Point(161, 132);
+            this.btnConsultarDisponibilidad.Location = new System.Drawing.Point(121, 107);
+            this.btnConsultarDisponibilidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConsultarDisponibilidad.Name = "btnConsultarDisponibilidad";
-            this.btnConsultarDisponibilidad.Size = new System.Drawing.Size(212, 49);
+            this.btnConsultarDisponibilidad.Size = new System.Drawing.Size(159, 40);
             this.btnConsultarDisponibilidad.TabIndex = 2;
             this.btnConsultarDisponibilidad.Text = "Consultar disponibilidad";
             this.btnConsultarDisponibilidad.UseVisualStyleBackColor = true;
             // 
             // btnCrearNuevaReserva
             // 
-            this.btnCrearNuevaReserva.Location = new System.Drawing.Point(161, 187);
+            this.btnCrearNuevaReserva.Location = new System.Drawing.Point(121, 152);
+            this.btnCrearNuevaReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCrearNuevaReserva.Name = "btnCrearNuevaReserva";
-            this.btnCrearNuevaReserva.Size = new System.Drawing.Size(212, 49);
+            this.btnCrearNuevaReserva.Size = new System.Drawing.Size(159, 40);
             this.btnCrearNuevaReserva.TabIndex = 3;
             this.btnCrearNuevaReserva.Text = "Crear nueva reserva";
             this.btnCrearNuevaReserva.UseVisualStyleBackColor = true;
             // 
             // btnEliminarReserva
             // 
-            this.btnEliminarReserva.Location = new System.Drawing.Point(161, 242);
+            this.btnEliminarReserva.Location = new System.Drawing.Point(121, 197);
+            this.btnEliminarReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminarReserva.Name = "btnEliminarReserva";
-            this.btnEliminarReserva.Size = new System.Drawing.Size(212, 49);
+            this.btnEliminarReserva.Size = new System.Drawing.Size(159, 40);
             this.btnEliminarReserva.TabIndex = 4;
             this.btnEliminarReserva.Text = "Eliminar reserva";
             this.btnEliminarReserva.UseVisualStyleBackColor = true;
             // 
             // btnAdminSalir
             // 
-            this.btnAdminSalir.Location = new System.Drawing.Point(234, 355);
+            this.btnAdminSalir.Location = new System.Drawing.Point(176, 288);
+            this.btnAdminSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdminSalir.Name = "btnAdminSalir";
-            this.btnAdminSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnAdminSalir.Size = new System.Drawing.Size(56, 19);
             this.btnAdminSalir.TabIndex = 5;
             this.btnAdminSalir.Text = "Salir";
             this.btnAdminSalir.UseVisualStyleBackColor = true;
+            this.btnAdminSalir.Click += new System.EventHandler(this.btnAdminSalir_Click);
             // 
             // frmAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(518, 450);
+            this.ClientSize = new System.Drawing.Size(388, 366);
             this.Controls.Add(this.btnAdminSalir);
             this.Controls.Add(this.btnEliminarReserva);
             this.Controls.Add(this.btnCrearNuevaReserva);
             this.Controls.Add(this.btnConsultarDisponibilidad);
             this.Controls.Add(this.btnConsultarReserva);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmAdministrador";
             this.Text = "frmAdministrador";
             this.ResumeLayout(false);

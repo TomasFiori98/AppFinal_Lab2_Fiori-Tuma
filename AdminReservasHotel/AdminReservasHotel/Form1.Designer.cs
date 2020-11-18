@@ -31,8 +31,8 @@
             this.btnIngresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioBtnAdmin = new System.Windows.Forms.RadioButton();
             this.radioBtnHuesped = new System.Windows.Forms.RadioButton();
+            this.radioBtnAdmin = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opciones";
             // 
+            // radioBtnHuesped
+            // 
+            this.radioBtnHuesped.AutoSize = true;
+            this.radioBtnHuesped.Location = new System.Drawing.Point(25, 63);
+            this.radioBtnHuesped.Name = "radioBtnHuesped";
+            this.radioBtnHuesped.Size = new System.Drawing.Size(68, 17);
+            this.radioBtnHuesped.TabIndex = 1;
+            this.radioBtnHuesped.TabStop = true;
+            this.radioBtnHuesped.Text = "Huesped";
+            this.radioBtnHuesped.UseVisualStyleBackColor = true;
+            // 
             // radioBtnAdmin
             // 
             this.radioBtnAdmin.AutoSize = true;
@@ -80,23 +91,12 @@
             this.radioBtnAdmin.UseVisualStyleBackColor = true;
             this.radioBtnAdmin.CheckedChanged += new System.EventHandler(this.radioBtnAdmin_CheckedChanged);
             // 
-            // radioBtnHuesped
-            // 
-            this.radioBtnHuesped.AutoSize = true;
-            this.radioBtnHuesped.Location = new System.Drawing.Point(25, 63);
-            this.radioBtnHuesped.Name = "radioBtnHuesped";
-            this.radioBtnHuesped.Size = new System.Drawing.Size(68, 17);
-            this.radioBtnHuesped.TabIndex = 1;
-            this.radioBtnHuesped.TabStop = true;
-            this.radioBtnHuesped.Text = "Huesped";
-            this.radioBtnHuesped.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(282, 293);
+            this.ClientSize = new System.Drawing.Size(269, 279);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIngresar);

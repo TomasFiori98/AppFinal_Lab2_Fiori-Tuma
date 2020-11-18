@@ -48,22 +48,24 @@
             // btnConsultaReserva
             // 
             this.btnConsultaReserva.Location = new System.Drawing.Point(78, 84);
-            this.btnConsultaReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsultaReserva.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsultaReserva.Name = "btnConsultaReserva";
             this.btnConsultaReserva.Size = new System.Drawing.Size(136, 35);
             this.btnConsultaReserva.TabIndex = 1;
             this.btnConsultaReserva.Text = "Consultar tu reserva";
             this.btnConsultaReserva.UseVisualStyleBackColor = true;
+            this.btnConsultaReserva.Click += new System.EventHandler(this.btnConsultaReserva_Click);
             // 
             // btnConsultarDisponibilidad
             // 
             this.btnConsultarDisponibilidad.Location = new System.Drawing.Point(78, 144);
-            this.btnConsultarDisponibilidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsultarDisponibilidad.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsultarDisponibilidad.Name = "btnConsultarDisponibilidad";
             this.btnConsultarDisponibilidad.Size = new System.Drawing.Size(136, 35);
             this.btnConsultarDisponibilidad.TabIndex = 2;
             this.btnConsultarDisponibilidad.Text = "Consultar disponibilidad";
             this.btnConsultarDisponibilidad.UseVisualStyleBackColor = true;
+            this.btnConsultarDisponibilidad.Click += new System.EventHandler(this.btnConsultarDisponibilidad_Click);
             // 
             // label2
             // 
@@ -77,10 +79,10 @@
             // 
             // btnHuespedSalir
             // 
-            this.btnHuespedSalir.Location = new System.Drawing.Point(122, 221);
-            this.btnHuespedSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuespedSalir.Location = new System.Drawing.Point(112, 220);
+            this.btnHuespedSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuespedSalir.Name = "btnHuespedSalir";
-            this.btnHuespedSalir.Size = new System.Drawing.Size(62, 25);
+            this.btnHuespedSalir.Size = new System.Drawing.Size(72, 29);
             this.btnHuespedSalir.TabIndex = 4;
             this.btnHuespedSalir.Text = "Salir";
             this.btnHuespedSalir.UseVisualStyleBackColor = true;
@@ -97,7 +99,7 @@
             this.Controls.Add(this.btnConsultarDisponibilidad);
             this.Controls.Add(this.btnConsultaReserva);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHuesped";
             this.Text = "frmHuesped";
             this.ResumeLayout(false);

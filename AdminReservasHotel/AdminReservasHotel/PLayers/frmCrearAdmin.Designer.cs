@@ -117,7 +117,7 @@
             // textBoxCorreoAdmin
             // 
             this.textBoxCorreoAdmin.Location = new System.Drawing.Point(153, 99);
-            this.textBoxCorreoAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCorreoAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCorreoAdmin.Name = "textBoxCorreoAdmin";
             this.textBoxCorreoAdmin.Size = new System.Drawing.Size(168, 20);
             this.textBoxCorreoAdmin.TabIndex = 6;
@@ -125,17 +125,17 @@
             // textBoxClaveAdmin
             // 
             this.textBoxClaveAdmin.Location = new System.Drawing.Point(153, 126);
-            this.textBoxClaveAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxClaveAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxClaveAdmin.Name = "textBoxClaveAdmin";
             this.textBoxClaveAdmin.Size = new System.Drawing.Size(168, 20);
             this.textBoxClaveAdmin.TabIndex = 7;
             // 
             // btnVerificarCrearAdmin
             // 
-            this.btnVerificarCrearAdmin.Location = new System.Drawing.Point(193, 159);
-            this.btnVerificarCrearAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnVerificarCrearAdmin.Location = new System.Drawing.Point(177, 150);
+            this.btnVerificarCrearAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.btnVerificarCrearAdmin.Name = "btnVerificarCrearAdmin";
-            this.btnVerificarCrearAdmin.Size = new System.Drawing.Size(87, 26);
+            this.btnVerificarCrearAdmin.Size = new System.Drawing.Size(103, 35);
             this.btnVerificarCrearAdmin.TabIndex = 8;
             this.btnVerificarCrearAdmin.Text = "Verificar";
             this.btnVerificarCrearAdmin.UseVisualStyleBackColor = true;
@@ -214,7 +214,7 @@
             // textBoxNombre
             // 
             this.textBoxNombre.Location = new System.Drawing.Point(64, 240);
-            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNombre.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(118, 20);
             this.textBoxNombre.TabIndex = 16;
@@ -222,7 +222,7 @@
             // textBoxApellido
             // 
             this.textBoxApellido.Location = new System.Drawing.Point(205, 240);
-            this.textBoxApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxApellido.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxApellido.Name = "textBoxApellido";
             this.textBoxApellido.Size = new System.Drawing.Size(170, 20);
             this.textBoxApellido.TabIndex = 17;
@@ -230,7 +230,7 @@
             // textBoxDni
             // 
             this.textBoxDni.Location = new System.Drawing.Point(64, 277);
-            this.textBoxDni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDni.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDni.Name = "textBoxDni";
             this.textBoxDni.Size = new System.Drawing.Size(118, 20);
             this.textBoxDni.TabIndex = 18;
@@ -238,7 +238,7 @@
             // textBoxCorreo
             // 
             this.textBoxCorreo.Location = new System.Drawing.Point(205, 276);
-            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCorreo.Name = "textBoxCorreo";
             this.textBoxCorreo.Size = new System.Drawing.Size(170, 20);
             this.textBoxCorreo.TabIndex = 19;
@@ -246,7 +246,7 @@
             // dateTimeNacimiento
             // 
             this.dateTimeNacimiento.Location = new System.Drawing.Point(177, 313);
-            this.dateTimeNacimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimeNacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeNacimiento.MaxDate = new System.DateTime(2020, 11, 16, 0, 0, 0, 0);
             this.dateTimeNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimeNacimiento.Name = "dateTimeNacimiento";
@@ -257,7 +257,7 @@
             // textBoxClave
             // 
             this.textBoxClave.Location = new System.Drawing.Point(164, 349);
-            this.textBoxClave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxClave.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxClave.Name = "textBoxClave";
             this.textBoxClave.Size = new System.Drawing.Size(167, 20);
             this.textBoxClave.TabIndex = 21;
@@ -265,7 +265,7 @@
             // btnCrearAdmin
             // 
             this.btnCrearAdmin.Location = new System.Drawing.Point(153, 380);
-            this.btnCrearAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrearAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrearAdmin.Name = "btnCrearAdmin";
             this.btnCrearAdmin.Size = new System.Drawing.Size(127, 37);
             this.btnCrearAdmin.TabIndex = 22;
@@ -275,10 +275,10 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(190, 422);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Location = new System.Drawing.Point(177, 430);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(56, 19);
+            this.btnSalir.Size = new System.Drawing.Size(83, 33);
             this.btnSalir.TabIndex = 23;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -289,7 +289,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(431, 453);
+            this.ClientSize = new System.Drawing.Size(459, 487);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCrearAdmin);
             this.Controls.Add(this.textBoxClave);
@@ -314,9 +314,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCrearAdmin";
-            this.Text = "frmCrearAdmin";
+            this.Text = "Crear Administrador";
             this.ResumeLayout(false);
             this.PerformLayout();
 

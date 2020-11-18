@@ -29,5 +29,11 @@ namespace AdminReservasHotel.PLayers
             formAdmin.ShowDialog(this);
             
         }
+
+        private void btnIngresarAdmin_Click(object sender, EventArgs e)
+        {
+            frmAdministrador form_admin = new frmAdministrador();
+            form_admin.ShowDialog();
+        }
     }
 }

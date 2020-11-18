@@ -16,5 +16,10 @@ namespace AdminReservasHotel.PLayers
         {
             InitializeComponent();
         }
+
+        private void btnAdminSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

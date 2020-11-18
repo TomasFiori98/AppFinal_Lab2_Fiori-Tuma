@@ -33,6 +33,7 @@ namespace AdminReservasHotel
                 frmHuesped form_huesped = new frmHuesped();
                 form_huesped.ShowDialog();
             }
+            
         }
 
         private void radioBtnAdmin_CheckedChanged(object sender, EventArgs e)
