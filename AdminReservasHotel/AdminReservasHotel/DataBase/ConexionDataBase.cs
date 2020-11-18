@@ -11,6 +11,18 @@ namespace AdminReservasHotel.DataBase
 {
     class ConexionDataBase
     {
+        public static MySqlConnection generarConexion()
+        {
+            try
+            {
+                MySqlConnection conexion = new MySqlConnection("server=localhost; port=3306; uid=root; pwd=1234; database=dbsistema;");
+                return conexion;
+            }
+            catch (MySqlException ex)
+            {
+                return null;
+            }
+        }
 
         public bool probarConexion()
         {

@@ -26,14 +26,17 @@ namespace AdminReservasHotel.Controller
             string correo = form.txtCorreoNuevo.Text;
             DateTime fecha_nacimiento = form.dateTimeNacimiento.Value;
             
-            
             if (this.admin_huesped) {
-                
                 string clave = form.txtClaveNueva.Text;
-                //administradoresTableAdapter.InsertQuery(nombre, apellido, correo, dni, fecha_nacimiento, clave);
+
+                //Creamos el objeto administrador
                 Administrador admin = new Administrador(nombre, apellido, correo, dni, fecha_nacimiento, clave);
                 form.txtClaveNueva.Text = "";
-                MessageBox.Show("Administrador creado con extio!!!", "Realizado");
+
+                //Insertamos los datos del administrador en la base de datos
+                InsertData.insertarAdministrador(nombre, apellido, dni, correo, fecha_nacimiento, clave);
+
+                MessageBox.Show("Administrador creado con éxito!!!", "Realizado");
             }
             else
             {
@@ -45,6 +48,9 @@ namespace AdminReservasHotel.Controller
             form.txtDni.Text = "";
             form.txtCorreoNuevo.Text = "";
             form.dateTimeNacimiento.Value = DateTime.Today;
+
+            
+
         }
         
     }
