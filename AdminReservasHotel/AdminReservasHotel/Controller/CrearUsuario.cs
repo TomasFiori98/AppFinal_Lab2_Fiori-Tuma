@@ -20,19 +20,19 @@ namespace AdminReservasHotel.Controller
 
         public void CreadorUsuario(frmCrearAdmin form)
         {
-            string nombre = form.textBoxNombre.Text;
-            string apellido = form.textBoxApellido.Text;
-            string dni = form.textBoxDni.Text;
-            string correo = form.textBoxCorreo.Text;
+            string nombre = form.txtNombre.Text;
+            string apellido = form.txtApellido.Text;
+            string dni = form.txtDni.Text;
+            string correo = form.txtCorreoNuevo.Text;
             DateTime fecha_nacimiento = form.dateTimeNacimiento.Value;
             
             
             if (this.admin_huesped) {
                 
-                string clave = form.textBoxClave.Text;
+                string clave = form.txtClaveNueva.Text;
                 //administradoresTableAdapter.InsertQuery(nombre, apellido, correo, dni, fecha_nacimiento, clave);
                 Administrador admin = new Administrador(nombre, apellido, correo, dni, fecha_nacimiento, clave);
-                form.textBoxClave.Text = "";
+                form.txtClaveNueva.Text = "";
                 MessageBox.Show("Administrador creado con extio!!!", "Realizado");
             }
             else
@@ -40,10 +40,10 @@ namespace AdminReservasHotel.Controller
                 //TODO
             }
 
-            form.textBoxNombre.Text = "";
-            form.textBoxApellido.Text = "";
-            form.textBoxDni.Text = "";
-            form.textBoxCorreo.Text = "";
+            form.txtNombre.Text = "";
+            form.txtApellido.Text = "";
+            form.txtDni.Text = "";
+            form.txtCorreoNuevo.Text = "";
             form.dateTimeNacimiento.Value = DateTime.Today;
         }
         

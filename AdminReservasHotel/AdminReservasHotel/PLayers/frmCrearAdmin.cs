@@ -21,8 +21,8 @@ namespace AdminReservasHotel.PLayers
         private void btnCrearAdmin_Click(object sender, EventArgs e)
         {
             CrearUsuario crear_usuario = new CrearUsuario(true);
-            crear_usuario.CreadorUsuario(this);
 
+            crear_usuario.CreadorUsuario(this);
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -33,6 +33,11 @@ namespace AdminReservasHotel.PLayers
         private void btnVerificarCrearAdmin_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void frmCrearAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
