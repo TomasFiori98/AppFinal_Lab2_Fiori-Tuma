@@ -92,6 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\BuscarData.cs" />
     <Compile Include="Controller\CrearUsuario.cs" />
     <Compile Include="Controller\InsertData.cs" />
     <Compile Include="DataBase\ConexionDataBase.cs" />

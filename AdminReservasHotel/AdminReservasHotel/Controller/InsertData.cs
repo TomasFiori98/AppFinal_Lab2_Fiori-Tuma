@@ -21,13 +21,13 @@ namespace AdminReservasHotel.Controller
             conexion.Open();
 
             string sql = "INSERT INTO administradores (nombre, apellido, dni, correo, fecha_nacimiento, clave) VALUES " +
-                "('" + nombre + "','" + apellido + "','" + dni + "','" + correo + "','" + fecha_nacimiento + "','" + clave + "')";
+                "('" + nombre + "','" + apellido + "','" + dni + "','" + correo + "','" + fecha_nacimiento.ToString() + "','" + clave + "')";
 
             try
             {
                 MySqlCommand comando = new MySqlCommand(sql, conexion);
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Usuario agregado correctamente!!");
+                MessageBox.Show("Administrador agregado correctamente!!");
             } catch (MySqlException ex) {
                 MessageBox.Show("Error al guardar: " + ex.Message);
             }
@@ -37,8 +37,5 @@ namespace AdminReservasHotel.Controller
             }
 
         }
-
-
-
     }
 }

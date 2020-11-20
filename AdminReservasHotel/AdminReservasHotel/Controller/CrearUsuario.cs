@@ -20,6 +20,7 @@ namespace AdminReservasHotel.Controller
 
         public void CreadorUsuario(frmCrearAdmin form)
         {
+            
             string nombre = form.txtNombre.Text;
             string apellido = form.txtApellido.Text;
             string dni = form.txtDni.Text;
@@ -48,8 +49,6 @@ namespace AdminReservasHotel.Controller
             form.txtDni.Text = "";
             form.txtCorreoNuevo.Text = "";
             form.dateTimeNacimiento.Value = DateTime.Today;
-
-            
 
         }
         

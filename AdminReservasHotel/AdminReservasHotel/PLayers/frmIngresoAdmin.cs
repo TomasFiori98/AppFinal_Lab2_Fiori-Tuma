@@ -32,8 +32,22 @@ namespace AdminReservasHotel.PLayers
 
         private void btnIngresarAdmin_Click(object sender, EventArgs e)
         {
-            frmAdministrador form_admin = new frmAdministrador();
-            form_admin.ShowDialog();
+            BuscarData bd = new BuscarData();
+
+            if (bd.BuscarAdministrador(this, false))
+            {
+                frmAdministrador form_admin = new frmAdministrador();
+                form_admin.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("El correo y la clave no coinciden");
+            }
+        }
+
+        private void frmIngresoAdmin_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
