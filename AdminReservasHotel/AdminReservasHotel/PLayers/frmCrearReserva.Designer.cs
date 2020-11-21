@@ -32,29 +32,32 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbPagAhora = new System.Windows.Forms.RadioButton();
+            this.rdPagCuandoIngresa = new System.Windows.Forms.RadioButton();
             this.btnCrearReserva = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtDni = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.dtpFechaNacim = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaSalida = new System.Windows.Forms.DateTimePicker();
+            this.pickerCantPersonas = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.cbHabitaciones = new System.Windows.Forms.ComboBox();
+            this.txtIdReserva = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pickerCantPersonas)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -93,19 +96,10 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Cantidad de personas: ";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(40, 152);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(202, 17);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Datos del titular de la reserva: ";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(88, 188);
+            this.label7.Location = new System.Drawing.Point(82, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(66, 17);
             this.label7.TabIndex = 6;
@@ -114,7 +108,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(88, 214);
+            this.label8.Location = new System.Drawing.Point(82, 55);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 17);
             this.label8.TabIndex = 7;
@@ -123,7 +117,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(117, 244);
+            this.label9.Location = new System.Drawing.Point(111, 85);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(37, 17);
             this.label9.TabIndex = 8;
@@ -132,7 +126,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(95, 270);
+            this.label10.Location = new System.Drawing.Point(89, 111);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(59, 17);
             this.label10.TabIndex = 9;
@@ -141,33 +135,33 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 301);
+            this.label11.Location = new System.Drawing.Point(1, 142);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(147, 17);
             this.label11.TabIndex = 10;
             this.label11.Text = "Fecha de nacimiento: ";
             // 
-            // radioButton1
+            // rbPagAhora
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(36, 21);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 21);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Ahora";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbPagAhora.AutoSize = true;
+            this.rbPagAhora.Location = new System.Drawing.Point(36, 21);
+            this.rbPagAhora.Name = "rbPagAhora";
+            this.rbPagAhora.Size = new System.Drawing.Size(67, 21);
+            this.rbPagAhora.TabIndex = 12;
+            this.rbPagAhora.TabStop = true;
+            this.rbPagAhora.Text = "Ahora";
+            this.rbPagAhora.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdPagCuandoIngresa
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(129, 21);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(129, 21);
-            this.radioButton2.TabIndex = 13;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Cuando ingresa";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdPagCuandoIngresa.AutoSize = true;
+            this.rdPagCuandoIngresa.Location = new System.Drawing.Point(129, 21);
+            this.rdPagCuandoIngresa.Name = "rdPagCuandoIngresa";
+            this.rdPagCuandoIngresa.Size = new System.Drawing.Size(129, 21);
+            this.rdPagCuandoIngresa.TabIndex = 13;
+            this.rdPagCuandoIngresa.TabStop = true;
+            this.rdPagCuandoIngresa.Text = "Cuando ingresa";
+            this.rdPagCuandoIngresa.UseVisualStyleBackColor = true;
             // 
             // btnCrearReserva
             // 
@@ -177,6 +171,7 @@
             this.btnCrearReserva.TabIndex = 14;
             this.btnCrearReserva.Text = "Crear Reserva";
             this.btnCrearReserva.UseVisualStyleBackColor = true;
+            this.btnCrearReserva.Click += new System.EventHandler(this.btnCrearReserva_Click);
             // 
             // btnSalir
             // 
@@ -188,78 +183,78 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 183);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 22);
-            this.textBox2.TabIndex = 17;
+            this.txtNombre.Location = new System.Drawing.Point(161, 24);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(203, 22);
+            this.txtNombre.TabIndex = 17;
             // 
-            // textBox3
+            // txtApellido
             // 
-            this.textBox3.Location = new System.Drawing.Point(167, 211);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(203, 22);
-            this.textBox3.TabIndex = 18;
+            this.txtApellido.Location = new System.Drawing.Point(161, 52);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(203, 22);
+            this.txtApellido.TabIndex = 18;
             // 
-            // textBox4
+            // txtDni
             // 
-            this.textBox4.Location = new System.Drawing.Point(167, 239);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(203, 22);
-            this.textBox4.TabIndex = 19;
+            this.txtDni.Location = new System.Drawing.Point(161, 80);
+            this.txtDni.Name = "txtDni";
+            this.txtDni.Size = new System.Drawing.Size(203, 22);
+            this.txtDni.TabIndex = 19;
             // 
-            // textBox5
+            // txtCorreo
             // 
-            this.textBox5.Location = new System.Drawing.Point(167, 267);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(203, 22);
-            this.textBox5.TabIndex = 20;
+            this.txtCorreo.Location = new System.Drawing.Point(161, 108);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(203, 22);
+            this.txtCorreo.TabIndex = 20;
             // 
-            // dateTimePicker1
+            // dtpFechaNacim
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(167, 301);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 11, 18, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(203, 22);
-            this.dateTimePicker1.TabIndex = 21;
-            this.dateTimePicker1.Value = new System.DateTime(2020, 11, 18, 0, 0, 0, 0);
+            this.dtpFechaNacim.Location = new System.Drawing.Point(161, 142);
+            this.dtpFechaNacim.MaxDate = new System.DateTime(2020, 11, 18, 0, 0, 0, 0);
+            this.dtpFechaNacim.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtpFechaNacim.Name = "dtpFechaNacim";
+            this.dtpFechaNacim.Size = new System.Drawing.Size(203, 22);
+            this.dtpFechaNacim.TabIndex = 21;
+            this.dtpFechaNacim.Value = new System.DateTime(2020, 11, 18, 0, 0, 0, 0);
             // 
-            // dateTimePicker2
+            // dtpFechaIngreso
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(181, 32);
-            this.dateTimePicker2.MaxDate = new System.DateTime(2025, 6, 30, 0, 0, 0, 0);
-            this.dateTimePicker2.MinDate = new System.DateTime(2025, 6, 30, 0, 0, 0, 0);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker2.TabIndex = 22;
-            this.dateTimePicker2.Value = new System.DateTime(2025, 6, 30, 0, 0, 0, 0);
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(181, 32);
+            this.dtpFechaIngreso.MaxDate = new System.DateTime(2025, 6, 30, 0, 0, 0, 0);
+            this.dtpFechaIngreso.MinDate = new System.DateTime(2025, 6, 30, 0, 0, 0, 0);
+            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(200, 22);
+            this.dtpFechaIngreso.TabIndex = 22;
+            this.dtpFechaIngreso.Value = new System.DateTime(2025, 6, 30, 0, 0, 0, 0);
             // 
-            // dateTimePicker3
+            // dtpFechaSalida
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(181, 60);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker3.TabIndex = 23;
+            this.dtpFechaSalida.Location = new System.Drawing.Point(181, 60);
+            this.dtpFechaSalida.Name = "dtpFechaSalida";
+            this.dtpFechaSalida.Size = new System.Drawing.Size(200, 22);
+            this.dtpFechaSalida.TabIndex = 23;
             // 
-            // numericUpDown1
+            // pickerCantPersonas
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(181, 115);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.pickerCantPersonas.Location = new System.Drawing.Point(181, 115);
+            this.pickerCantPersonas.Maximum = new decimal(new int[] {
             8,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.pickerCantPersonas.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(61, 22);
-            this.numericUpDown1.TabIndex = 24;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.pickerCantPersonas.Name = "pickerCantPersonas";
+            this.pickerCantPersonas.Size = new System.Drawing.Size(92, 22);
+            this.pickerCantPersonas.TabIndex = 24;
+            this.pickerCantPersonas.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -267,9 +262,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(62, 345);
+            this.groupBox1.Controls.Add(this.rdPagCuandoIngresa);
+            this.groupBox1.Controls.Add(this.rbPagAhora);
+            this.groupBox1.Location = new System.Drawing.Point(62, 332);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(278, 59);
             this.groupBox1.TabIndex = 25;
@@ -278,21 +273,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.groupBox3);
+            this.groupBox2.Controls.Add(this.cbHabitaciones);
             this.groupBox2.Controls.Add(this.groupBox1);
-            this.groupBox2.Controls.Add(this.numericUpDown1);
-            this.groupBox2.Controls.Add(this.dateTimePicker3);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.pickerCantPersonas);
+            this.groupBox2.Controls.Add(this.dtpFechaSalida);
+            this.groupBox2.Controls.Add(this.dtpFechaIngreso);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
@@ -303,6 +289,44 @@
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Llene el formuario para crear una nueva reserva: ";
+            // 
+            // cbHabitaciones
+            // 
+            this.cbHabitaciones.FormattingEnabled = true;
+            this.cbHabitaciones.Location = new System.Drawing.Point(181, 88);
+            this.cbHabitaciones.Name = "cbHabitaciones";
+            this.cbHabitaciones.Size = new System.Drawing.Size(91, 24);
+            this.cbHabitaciones.TabIndex = 26;
+            // 
+            // txtIdReserva
+            // 
+            this.txtIdReserva.Enabled = false;
+            this.txtIdReserva.Location = new System.Drawing.Point(17, 66);
+            this.txtIdReserva.Name = "txtIdReserva";
+            this.txtIdReserva.Size = new System.Drawing.Size(27, 22);
+            this.txtIdReserva.TabIndex = 27;
+            this.txtIdReserva.Text = "Id";
+            this.txtIdReserva.Visible = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtIdReserva);
+            this.groupBox3.Controls.Add(this.dtpFechaNacim);
+            this.groupBox3.Controls.Add(this.txtCorreo);
+            this.groupBox3.Controls.Add(this.txtDni);
+            this.groupBox3.Controls.Add(this.txtApellido);
+            this.groupBox3.Controls.Add(this.txtNombre);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label10);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Location = new System.Drawing.Point(5, 152);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(393, 174);
+            this.groupBox3.TabIndex = 28;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Datos del titular de la reserva: ";
             // 
             // frmCrearReserva
             // 
@@ -315,12 +339,15 @@
             this.Controls.Add(this.btnCrearReserva);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmCrearReserva";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Reserva";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pickerCantPersonas)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -330,25 +357,27 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button btnCrearReserva;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        internal System.Windows.Forms.TextBox txtNombre;
+        internal System.Windows.Forms.TextBox txtApellido;
+        internal System.Windows.Forms.TextBox txtDni;
+        internal System.Windows.Forms.TextBox txtCorreo;
+        internal System.Windows.Forms.RadioButton rbPagAhora;
+        internal System.Windows.Forms.RadioButton rdPagCuandoIngresa;
+        internal System.Windows.Forms.DateTimePicker dtpFechaNacim;
+        internal System.Windows.Forms.DateTimePicker dtpFechaIngreso;
+        internal System.Windows.Forms.DateTimePicker dtpFechaSalida;
+        internal System.Windows.Forms.NumericUpDown pickerCantPersonas;
+        internal System.Windows.Forms.ComboBox cbHabitaciones;
+        internal System.Windows.Forms.TextBox txtIdReserva;
     }
 }

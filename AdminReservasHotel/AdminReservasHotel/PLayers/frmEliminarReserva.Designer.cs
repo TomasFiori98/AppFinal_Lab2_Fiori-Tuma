@@ -134,6 +134,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmEliminarReserva";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEliminarReserva";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEliminarReserva)).EndInit();
             this.ResumeLayout(false);

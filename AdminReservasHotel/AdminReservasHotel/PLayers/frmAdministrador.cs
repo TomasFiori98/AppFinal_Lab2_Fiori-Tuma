@@ -21,5 +21,11 @@ namespace AdminReservasHotel.PLayers
         {
             Close();
         }
+
+        private void btnCrearNuevaReserva_Click(object sender, EventArgs e)
+        {
+            frmCrearReserva frm = new frmCrearReserva();
+            frm.ShowDialog();
+        }
     }
 }

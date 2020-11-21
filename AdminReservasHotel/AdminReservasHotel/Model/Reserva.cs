@@ -8,7 +8,7 @@ namespace AdminReservasHotel.Model
 {
     class Reserva
     {
-        private string id;
+        public static int id;
         private DateTime fecha_ingreso;
         private DateTime fecha_salida;
         private Habitacion habitacion;
@@ -16,9 +16,8 @@ namespace AdminReservasHotel.Model
         private int cant_personas;
         private bool pagado;
 
-        public Reserva(string id, DateTime fecha_ingreso, DateTime fecha_salida, int cant_personas, bool pagado)
+        public Reserva(DateTime fecha_ingreso, DateTime fecha_salida, int cant_personas, bool pagado)
         {
-            this.id = id;
             this.fecha_ingreso = fecha_ingreso;
             this.fecha_salida = fecha_salida;
             this.cant_personas = cant_personas;

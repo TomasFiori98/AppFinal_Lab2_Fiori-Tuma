@@ -20,6 +20,7 @@ namespace AdminReservasHotel.DataBase
             }
             catch (MySqlException ex)
             {
+                MessageBox.Show("ERROR EN LA CONEXION A LA BASE DE DATOS" + ex.Message, "ERROR!");
                 return null;
             }
         }

@@ -26,7 +26,5 @@ namespace AdminReservasHotel.Model
 
         }
 
-
-
     }
 }

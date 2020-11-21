@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AdminReservasHotel.Controller;
 
 namespace AdminReservasHotel.PLayers
 {
@@ -20,6 +21,12 @@ namespace AdminReservasHotel.PLayers
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnCrearReserva_Click(object sender, EventArgs e)
+        {
+            CrearReserva crearRes = new CrearReserva();
+            crearRes.creadorReserva(this);
         }
     }
 }
