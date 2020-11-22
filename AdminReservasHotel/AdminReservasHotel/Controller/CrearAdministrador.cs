@@ -43,7 +43,7 @@ namespace AdminReservasHotel.Controller
             form.txtApellido.Text = "";
             form.txtDni.Text = "";
             form.txtCorreoNuevo.Text = "";
-            form.dateTimeNacimiento.Value = DateTime.Today;
+            form.dateTimeNacimiento.Value = DateTime.Parse("1/1/1900");
             form.txtClaveNueva.Text = "";
 
         }

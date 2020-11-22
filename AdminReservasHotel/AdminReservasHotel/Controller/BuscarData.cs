@@ -15,21 +15,25 @@ namespace AdminReservasHotel.Controller
 
         public bool BuscarAdministrador(Form form, bool crear_o_ingreso)
         {
-            bool encontrado;
+            bool encontrado = true;
             string correo;
+            string clave;
+
             if (crear_o_ingreso) { //Si se llama a la funcion desde el form para crear admin
                 frmCrearAdmin frm_crear_admin = (frmCrearAdmin)form;
                 correo = frm_crear_admin.txtCorreoAdmin.Text;
+                clave = frm_crear_admin.txtClaveAdmin.Text;
             }
             else //Si se llama a la funcion desde el form para ingresoAdmin
             {
                 frmIngresoAdmin frm_ingreso_admin = (frmIngresoAdmin)form;
                 correo = frm_ingreso_admin.txtCorreoAdmin.Text;
+                clave = frm_ingreso_admin.txtClaveClave.Text;
             }
 
             MySqlDataReader reader = null;
 
-            string sql = "SELECT nombre, apellido, dni, correo, fecha_nacimiento, clave FROM administradores WHERE correo LIKE '"+correo+"' LIMIT 1";
+            string sql = "SELECT correo, clave FROM administradores WHERE correo LIKE '"+correo+"' LIMIT 1";
 
             MySqlConnection conexion = ConexionDataBase.generarConexion();
             conexion.Open();
@@ -39,8 +43,15 @@ namespace AdminReservasHotel.Controller
                 MySqlCommand comando = new MySqlCommand(sql, conexion);
                 reader = comando.ExecuteReader();
                 if (reader.HasRows)
-                {
-                    encontrado = true;
+                {                    
+                    while (reader.Read())
+                    {
+                        if (clave == reader.GetString(1))
+                            encontrado = true;
+                        else
+                            encontrado = false;
+                    }
+                    
                 }
                 else
                 {
