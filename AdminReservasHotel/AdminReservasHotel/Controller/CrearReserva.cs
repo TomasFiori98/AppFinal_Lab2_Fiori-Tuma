@@ -27,8 +27,7 @@ namespace AdminReservasHotel.Controller
             string dni = frm.txtDni.Text;
             string correo = frm.txtCorreo.Text;
             DateTime fecha_nacimiento = frm.dtpFechaNacim.Value;
-            string id_reserva = frm.txtIdReserva.Text;
-
+            
             Reserva.id++;
 
             //Creamos los objetos
