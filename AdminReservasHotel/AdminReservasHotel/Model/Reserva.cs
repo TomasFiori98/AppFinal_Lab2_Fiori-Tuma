@@ -8,7 +8,6 @@ namespace AdminReservasHotel.Model
 {
     class Reserva
     {
-        public static int id;
         private DateTime fecha_ingreso;
         private DateTime fecha_salida;
         private Habitacion habitacion;

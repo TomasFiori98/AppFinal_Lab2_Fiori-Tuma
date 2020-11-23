@@ -8,6 +8,7 @@ using AdminReservasHotel.DataBase;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace AdminReservasHotel.Controller
 {
@@ -44,8 +45,8 @@ namespace AdminReservasHotel.Controller
             MySqlConnection con = ConexionDataBase.generarConexion();
             con.Open();
 
-            string sql = "INSERT INTO huespedes (nombre, apellido, dni, correo, fecha_nacimiento, id_reserva) VAUES " +
-                "('"+ nombre +"','" + apellido + "','" + dni + "','" + correo + "','" + fecha_nacimiento.ToString("yyyy-MM-dd HH:mm:ss") + "','" + idReserva + "')";
+            string sql = "INSERT INTO huespedes (nombre, apellido, dni, correo, fecha_nacimiento, id_reserva) VALUES " +
+                "('" + nombre + "','" + apellido + "','" + dni + "','" + correo + "','" + fecha_nacimiento.ToString("yyyy-MM-dd HH:mm:ss") + "','" + idReserva + "')";
 
             try
             {
@@ -64,13 +65,13 @@ namespace AdminReservasHotel.Controller
 
         }
 
-        public static void insertarReserva(int id_reserva, DateTime f_ingreso, DateTime f_salida, string num_habitacion, string dni_titular, int cant_personas, int pagado)
+        public static void insertarReserva(DateTime f_ingreso, DateTime f_salida, string num_habitacion, string dni_titular, int cant_personas, int pagado)
         {
             MySqlConnection con = ConexionDataBase.generarConexion();
             con.Open();
 
-            string sql = "INSERT INTO huespedes (id_reserva, fecha_ingreso, fecha_salida, numero_habitacion, dni_titular, cant_personas, pagado) VAUES " +
-                "('" + id_reserva + "','" + f_ingreso.ToString("yyyy-MM-dd HH:mm:ss") + "','" + f_salida.ToString("yyyy-MM-dd HH:mm:ss") + "','" + num_habitacion + "','" + dni_titular + "','" + cant_personas + "', '" + pagado + "')";
+            string sql = "INSERT INTO reservas (id_reserva, fecha_ingreso, fecha_salida, numero_habitacion, dni_titular, cant_personas, pagado) VALUES " +
+                 "('" + f_ingreso.ToString("yyyy-MM-dd HH:mm:ss") + "','" + f_salida.ToString("yyyy-MM-dd HH:mm:ss") + "','" + num_habitacion + "','" + dni_titular + "','" + cant_personas + "','" + pagado + "')";
 
             try
             {
@@ -86,8 +87,6 @@ namespace AdminReservasHotel.Controller
             {
                 con.Close();
             }
-        }
-
-
+        }        
     }
 }
