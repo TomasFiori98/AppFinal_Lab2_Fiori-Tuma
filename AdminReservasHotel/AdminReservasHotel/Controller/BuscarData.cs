@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace AdminReservasHotel.Controller
 {
-    class BuscarData
+    static class BuscarData
     {
 
-        public bool BuscarAdministrador(Form form, bool crear_o_ingreso)
+        public static bool BuscarAdministrador(Form form, bool crear_o_ingreso)
         {
-            bool encontrado = true;
+            bool encontrado = false;
             string correo;
             string clave;
 
@@ -69,6 +69,84 @@ namespace AdminReservasHotel.Controller
             }
 
             return encontrado;
+        }
+
+        public static bool BuscarHuesped(string dni)
+        {
+            bool encontrado = false;
+
+            MySqlDataReader reader = null;
+
+            string sql = "SELECT dni FROM huespedes WHERE dni LIKE '" + dni + "' LIMIT 1";
+
+            MySqlConnection conexion = ConexionDataBase.generarConexion();
+            conexion.Open();
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, conexion);
+                reader = comando.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        if (dni == reader.GetString(0))
+                            encontrado = true;
+                        else
+                            encontrado = false;
+                    }
+                }
+                else
+                {
+                    encontrado = false;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                encontrado = false;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+
+            return encontrado;
+        }
+
+        public static void BuscarResrva(frmConsultaReserva form) {
+            MySqlDataReader reader = null;
+
+            string sql = "SELECT dni FROM huespedes WHERE dni LIKE '" + dni + "' LIMIT 1";
+
+            MySqlConnection conexion = ConexionDataBase.generarConexion();
+            conexion.Open();
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, conexion);
+                reader = comando.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        
+                    }
+                }
+                else
+                {
+                    
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                encontrado = false;
+            }
+            finally
+            {
+                conexion.Close();
+            }
         }
 
     }

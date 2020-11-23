@@ -14,9 +14,9 @@ namespace AdminReservasHotel.Controller
         public void creadorReserva(frmCrearReserva form, Habitacion hab = null)
         {
             bool validado = true;
+            bool validadoBaseDatos = true;
 
             //Datos de la reserva
-            string id = form.txtIdReserva.Text;
             DateTime f_ingreso = form.dtpFechaIngreso.Value;
             DateTime f_salida = form.dtpFechaSalida.Value;
             int cant_personas = Convert.ToInt32(form.pickerCantPersonas.Value);
@@ -29,6 +29,7 @@ namespace AdminReservasHotel.Controller
             string correo = "";
             DateTime fecha_nacimiento = form.dtpFechaNacim.Value;
 
+            #region VALIDANDO CAMPOS DE TEXTBOXS
             if (form.txtNombre.Text.Length == 0)
             {
                 form.txtNombre.BackColor = System.Drawing.Color.Orange;
@@ -72,26 +73,40 @@ namespace AdminReservasHotel.Controller
                 correo = form.txtCorreo.Text;
                 form.txtCorreo.BackColor = System.Drawing.Color.White;
             }
+            #endregion
+
             //Creamos los objetos
-            if (validado) { 
-                Huesped huesp = new Huesped(nombre, apellido, dni, correo, fecha_nacimiento);
+            if (validado) {
 
-                Reserva res = new Reserva(f_ingreso, f_salida, cant_personas, pagado);
-                res.agregarHabitacion(hab);
-                res.asociarHuesped(huesp);
+                if (!BuscarData.BuscarHuesped(dni))
+                {
+                    Huesped huesp = new Huesped(nombre, apellido, dni, correo, fecha_nacimiento);
 
-                string num_habitacion = "4F";
+                    Reserva res = new Reserva(f_ingreso, f_salida, cant_personas, pagado);
+                    //res.agregarHabitacion(hab);
+                    res.asociarHuesped(huesp);
 
-                //Convertimos el booleano en entero para pasarlo como parametro e insertarlo en la base de datos
-                int conversion_pagado;
-                if (pagado)
-                    conversion_pagado = 1;
+                    string num_habitacion = "4F";
+
+                    //Convertimos el booleano en entero para pasarlo como parametro e insertarlo en la base de datos
+                    int conversion_pagado;
+                    if (pagado)
+                        conversion_pagado = 1;
+                    else
+                        conversion_pagado = 0;
+
+                    //Insertamos los datos de la reserva en la base de datos
+                    InsertData.insertarReserva(f_ingreso, f_salida, num_habitacion, dni, cant_personas, conversion_pagado);
+                    //InsertData.insertarHuesped(nombre, apellido, dni, correo, fecha_nacimiento, Reserva.id.ToString());
+                }
                 else
-                    conversion_pagado = 0;
-
-                //Insertamos los datos de la reserva en la base de datos
-                InsertData.insertarReserva(f_ingreso, f_salida, num_habitacion, dni, cant_personas, conversion_pagado);
-                InsertData.insertarHuesped(nombre, apellido, dni, correo, fecha_nacimiento, Reserva.id.ToString());
+                {
+                    MessageBox.Show("Ya existe un huésped con el dni: " + dni + ".\nSolo se puede crear una reserva por huesped!!!", "Control de reservas");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe llenar todos los campos para crear la reserva", "Datos Incompletos");
             }
         }
 

@@ -30,10 +30,9 @@ namespace AdminReservasHotel.PLayers
         }
 
         private void btnVerificarCrearAdmin_Click(object sender, EventArgs e)
-        {
-            BuscarData bd = new BuscarData();
+        {            
 
-            if (bd.BuscarAdministrador(this, true))
+            if (BuscarData.BuscarAdministrador(this, true))
             {
                 groupBoxNuevoAdmin.Enabled = true;
             }

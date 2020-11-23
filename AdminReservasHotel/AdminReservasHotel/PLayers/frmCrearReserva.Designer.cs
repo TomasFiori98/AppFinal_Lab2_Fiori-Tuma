@@ -154,7 +154,7 @@
             // 
             this.rbPagAhora.AutoSize = true;
             this.rbPagAhora.Location = new System.Drawing.Point(27, 17);
-            this.rbPagAhora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbPagAhora.Margin = new System.Windows.Forms.Padding(2);
             this.rbPagAhora.Name = "rbPagAhora";
             this.rbPagAhora.Size = new System.Drawing.Size(53, 17);
             this.rbPagAhora.TabIndex = 12;
@@ -166,7 +166,7 @@
             // 
             this.rdPagCuandoIngresa.AutoSize = true;
             this.rdPagCuandoIngresa.Location = new System.Drawing.Point(97, 17);
-            this.rdPagCuandoIngresa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdPagCuandoIngresa.Margin = new System.Windows.Forms.Padding(2);
             this.rdPagCuandoIngresa.Name = "rdPagCuandoIngresa";
             this.rdPagCuandoIngresa.Size = new System.Drawing.Size(99, 17);
             this.rdPagCuandoIngresa.TabIndex = 13;
@@ -177,7 +177,7 @@
             // btnCrearReserva
             // 
             this.btnCrearReserva.Location = new System.Drawing.Point(107, 349);
-            this.btnCrearReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrearReserva.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrearReserva.Name = "btnCrearReserva";
             this.btnCrearReserva.Size = new System.Drawing.Size(103, 25);
             this.btnCrearReserva.TabIndex = 14;
@@ -188,7 +188,7 @@
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(130, 379);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(56, 19);
             this.btnSalir.TabIndex = 15;
@@ -199,7 +199,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(121, 20);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(153, 20);
             this.txtNombre.TabIndex = 17;
@@ -207,7 +207,7 @@
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(121, 42);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(153, 20);
             this.txtApellido.TabIndex = 18;
@@ -215,7 +215,7 @@
             // txtDni
             // 
             this.txtDni.Location = new System.Drawing.Point(121, 65);
-            this.txtDni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDni.Margin = new System.Windows.Forms.Padding(2);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(153, 20);
             this.txtDni.TabIndex = 19;
@@ -223,7 +223,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(121, 88);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(153, 20);
             this.txtCorreo.TabIndex = 20;
@@ -232,7 +232,7 @@
             // 
             this.dtpFechaNacim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaNacim.Location = new System.Drawing.Point(121, 115);
-            this.dtpFechaNacim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFechaNacim.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFechaNacim.MaxDate = new System.DateTime(2020, 11, 18, 0, 0, 0, 0);
             this.dtpFechaNacim.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaNacim.Name = "dtpFechaNacim";
@@ -243,7 +243,7 @@
             // dtpFechaIngreso
             // 
             this.dtpFechaIngreso.Location = new System.Drawing.Point(99, 25);
-            this.dtpFechaIngreso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFechaIngreso.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFechaIngreso.MaxDate = new System.DateTime(2025, 6, 30, 0, 0, 0, 0);
             this.dtpFechaIngreso.MinDate = new System.DateTime(2020, 11, 22, 0, 0, 0, 0);
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
@@ -254,7 +254,7 @@
             // dtpFechaSalida
             // 
             this.dtpFechaSalida.Location = new System.Drawing.Point(99, 47);
-            this.dtpFechaSalida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFechaSalida.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFechaSalida.Name = "dtpFechaSalida";
             this.dtpFechaSalida.Size = new System.Drawing.Size(214, 20);
             this.dtpFechaSalida.TabIndex = 23;
@@ -263,7 +263,7 @@
             // pickerCantPersonas
             // 
             this.pickerCantPersonas.Location = new System.Drawing.Point(136, 93);
-            this.pickerCantPersonas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pickerCantPersonas.Margin = new System.Windows.Forms.Padding(2);
             this.pickerCantPersonas.Maximum = new decimal(new int[] {
             8,
             0,
@@ -288,9 +288,9 @@
             this.groupBox1.Controls.Add(this.rdPagCuandoIngresa);
             this.groupBox1.Controls.Add(this.rbPagAhora);
             this.groupBox1.Location = new System.Drawing.Point(46, 270);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(208, 48);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
@@ -309,9 +309,9 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(5, 11);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(317, 333);
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
@@ -331,9 +331,9 @@
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Location = new System.Drawing.Point(4, 124);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(295, 141);
             this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
@@ -342,10 +342,10 @@
             // txtIdReserva
             // 
             this.txtIdReserva.Enabled = false;
-            this.txtIdReserva.Location = new System.Drawing.Point(13, 54);
-            this.txtIdReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdReserva.Location = new System.Drawing.Point(14, 45);
+            this.txtIdReserva.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdReserva.Name = "txtIdReserva";
-            this.txtIdReserva.Size = new System.Drawing.Size(21, 20);
+            this.txtIdReserva.Size = new System.Drawing.Size(18, 20);
             this.txtIdReserva.TabIndex = 27;
             this.txtIdReserva.Text = "Id";
             this.txtIdReserva.Visible = false;
@@ -354,7 +354,7 @@
             // 
             this.cbHabitaciones.FormattingEnabled = true;
             this.cbHabitaciones.Location = new System.Drawing.Point(136, 72);
-            this.cbHabitaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbHabitaciones.Margin = new System.Windows.Forms.Padding(2);
             this.cbHabitaciones.Name = "cbHabitaciones";
             this.cbHabitaciones.Size = new System.Drawing.Size(69, 21);
             this.cbHabitaciones.TabIndex = 26;
@@ -368,7 +368,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCrearReserva);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCrearReserva";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Reserva";

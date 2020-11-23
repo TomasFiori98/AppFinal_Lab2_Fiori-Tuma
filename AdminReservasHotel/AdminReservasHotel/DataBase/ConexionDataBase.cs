@@ -15,7 +15,7 @@ namespace AdminReservasHotel.DataBase
         {
             try
             {
-                MySqlConnection conexion = new MySqlConnection("server=localhost; port=3306; uid=root; pwd=HAJL310812tb; database=dbsistema;");
+                MySqlConnection conexion = new MySqlConnection("server=localhost; port=3306; uid=root; pwd=1234; database=dbsistema;");
                 return conexion;
             }
             catch (MySqlException ex)
@@ -27,7 +27,7 @@ namespace AdminReservasHotel.DataBase
 
         public bool probarConexion()
         {
-            MySqlConnection conexion = new MySqlConnection("server=localhost; port=3306; uid=root; pwd=HAJL310812tb; database=dbsistema;");
+            MySqlConnection conexion = new MySqlConnection("server=localhost; port=3306; uid=root; pwd=1234; database=dbsistema;");
 
             try
             {

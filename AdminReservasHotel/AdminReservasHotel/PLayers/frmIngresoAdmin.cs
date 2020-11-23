@@ -32,9 +32,8 @@ namespace AdminReservasHotel.PLayers
 
         private void btnIngresarAdmin_Click(object sender, EventArgs e)
         {
-            BuscarData bd = new BuscarData();
-
-            if (bd.BuscarAdministrador(this, false))
+            
+            if (BuscarData.BuscarAdministrador(this, false))
             {
                 frmAdministrador form_admin = new frmAdministrador();
                 form_admin.ShowDialog();

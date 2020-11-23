@@ -70,7 +70,7 @@ namespace AdminReservasHotel.Controller
             MySqlConnection con = ConexionDataBase.generarConexion();
             con.Open();
 
-            string sql = "INSERT INTO reservas (id_reserva, fecha_ingreso, fecha_salida, numero_habitacion, dni_titular, cant_personas, pagado) VALUES " +
+            string sql = "INSERT INTO reservas (fecha_ingreso, fecha_salida, numero_habitacion, dni_titular, cant_personas, pagado) VALUES " +
                  "('" + f_ingreso.ToString("yyyy-MM-dd HH:mm:ss") + "','" + f_salida.ToString("yyyy-MM-dd HH:mm:ss") + "','" + num_habitacion + "','" + dni_titular + "','" + cant_personas + "','" + pagado + "')";
 
             try
@@ -81,7 +81,7 @@ namespace AdminReservasHotel.Controller
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Error al enviar la reserva a la base de datos: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
             finally
             {
