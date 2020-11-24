@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminReservasHotel.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,28 @@ namespace AdminReservasHotel.PLayers
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void frmEliminarReserva_Load(object sender, EventArgs e)
+        {
+            groupBox1.Enabled = false;
+        }
+
+        private void btnBuscarReserva_Click(object sender, EventArgs e)
+        {
+            BuscarData.BuscarEliminarReserva(this);
+        }
+
+        private void btnEliminarReserva_Click(object sender, EventArgs e)
+        {
+            DeleteData.EliminarReserva(this.txtDniTitular.Text);
+            lblCodigoId.Text = "-----";
+            lblFechaIngreso.Text = "-----";
+            lblFechaSalida.Text = "-----";
+            lblNHabitacion.Text = "-----";
+            lblCantidadPersonas.Text = "-----";
+            lblPago.Text = "-----";
+            groupBox1.Enabled = false;
         }
     }
 }

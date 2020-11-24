@@ -96,8 +96,8 @@ namespace AdminReservasHotel.Controller
                         conversion_pagado = 0;
 
                     //Insertamos los datos de la reserva en la base de datos
-                    InsertData.insertarReserva(f_ingreso, f_salida, num_habitacion, dni, cant_personas, conversion_pagado);
-                    //InsertData.insertarHuesped(nombre, apellido, dni, correo, fecha_nacimiento, Reserva.id.ToString());
+                    InsertData.insertarReserva(f_ingreso, f_salida, num_habitacion, dni, cant_personas, conversion_pagado);                    
+                    InsertData.insertarHuesped(nombre, apellido, dni, correo, fecha_nacimiento, BuscarData.BuscarIdReserva(dni));
                 }
                 else
                 {

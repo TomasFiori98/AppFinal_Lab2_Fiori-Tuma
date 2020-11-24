@@ -39,7 +39,7 @@ namespace AdminReservasHotel.Controller
 
         }
 
-        public static void insertarHuesped(string nombre, string apellido, string dni, string correo, DateTime fecha_nacimiento, string idReserva)
+        public static void insertarHuesped(string nombre, string apellido, string dni, string correo, DateTime fecha_nacimiento, int idReserva)
         {
 
             MySqlConnection con = ConexionDataBase.generarConexion();

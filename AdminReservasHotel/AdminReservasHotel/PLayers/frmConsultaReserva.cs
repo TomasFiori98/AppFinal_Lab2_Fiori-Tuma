@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminReservasHotel.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,11 @@ namespace AdminReservasHotel.PLayers
         private void button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnConsultarRes_Click(object sender, EventArgs e)
+        {
+            BuscarData.BuscarConsultaReserva(this);
         }
     }
 }

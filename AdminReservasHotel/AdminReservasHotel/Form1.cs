@@ -38,7 +38,23 @@ namespace AdminReservasHotel
 
         private void radioBtnAdmin_CheckedChanged(object sender, EventArgs e)
         {
+            
+                           
+        }
 
+        private void btnCerrarPrograma_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            radioBtnAdmin.Checked = true;
+        }
+
+        private void radioBtnHuesped_CheckedChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
