@@ -39,19 +39,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(72, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 13);
+            this.label1.Size = new System.Drawing.Size(358, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bienvenido de vuelta admin!";
             // 
             // btnConsultarReserva
             // 
-            this.btnConsultarReserva.Location = new System.Drawing.Point(121, 63);
-            this.btnConsultarReserva.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConsultarReserva.Location = new System.Drawing.Point(139, 80);
+            this.btnConsultarReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConsultarReserva.Name = "btnConsultarReserva";
-            this.btnConsultarReserva.Size = new System.Drawing.Size(159, 40);
+            this.btnConsultarReserva.Size = new System.Drawing.Size(212, 49);
             this.btnConsultarReserva.TabIndex = 1;
             this.btnConsultarReserva.Text = "Consultar reserva";
             this.btnConsultarReserva.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@
             // 
             // btnConsultarDisponibilidad
             // 
-            this.btnConsultarDisponibilidad.Location = new System.Drawing.Point(121, 107);
-            this.btnConsultarDisponibilidad.Margin = new System.Windows.Forms.Padding(2);
+            this.btnConsultarDisponibilidad.Location = new System.Drawing.Point(139, 134);
+            this.btnConsultarDisponibilidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnConsultarDisponibilidad.Name = "btnConsultarDisponibilidad";
-            this.btnConsultarDisponibilidad.Size = new System.Drawing.Size(159, 40);
+            this.btnConsultarDisponibilidad.Size = new System.Drawing.Size(212, 49);
             this.btnConsultarDisponibilidad.TabIndex = 2;
             this.btnConsultarDisponibilidad.Text = "Consultar disponibilidad";
             this.btnConsultarDisponibilidad.UseVisualStyleBackColor = true;
@@ -70,10 +70,10 @@
             // 
             // btnCrearNuevaReserva
             // 
-            this.btnCrearNuevaReserva.Location = new System.Drawing.Point(121, 152);
-            this.btnCrearNuevaReserva.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCrearNuevaReserva.Location = new System.Drawing.Point(139, 189);
+            this.btnCrearNuevaReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCrearNuevaReserva.Name = "btnCrearNuevaReserva";
-            this.btnCrearNuevaReserva.Size = new System.Drawing.Size(159, 40);
+            this.btnCrearNuevaReserva.Size = new System.Drawing.Size(212, 49);
             this.btnCrearNuevaReserva.TabIndex = 3;
             this.btnCrearNuevaReserva.Text = "Crear nueva reserva";
             this.btnCrearNuevaReserva.UseVisualStyleBackColor = true;
@@ -81,10 +81,10 @@
             // 
             // btnEliminarReserva
             // 
-            this.btnEliminarReserva.Location = new System.Drawing.Point(121, 197);
-            this.btnEliminarReserva.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarReserva.Location = new System.Drawing.Point(139, 244);
+            this.btnEliminarReserva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarReserva.Name = "btnEliminarReserva";
-            this.btnEliminarReserva.Size = new System.Drawing.Size(159, 40);
+            this.btnEliminarReserva.Size = new System.Drawing.Size(212, 49);
             this.btnEliminarReserva.TabIndex = 4;
             this.btnEliminarReserva.Text = "Eliminar reserva";
             this.btnEliminarReserva.UseVisualStyleBackColor = true;
@@ -92,10 +92,10 @@
             // 
             // btnAdminSalir
             // 
-            this.btnAdminSalir.Location = new System.Drawing.Point(151, 286);
-            this.btnAdminSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdminSalir.Location = new System.Drawing.Point(195, 343);
+            this.btnAdminSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdminSalir.Name = "btnAdminSalir";
-            this.btnAdminSalir.Size = new System.Drawing.Size(73, 28);
+            this.btnAdminSalir.Size = new System.Drawing.Size(97, 34);
             this.btnAdminSalir.TabIndex = 5;
             this.btnAdminSalir.Text = "Salir";
             this.btnAdminSalir.UseVisualStyleBackColor = true;
@@ -103,17 +103,17 @@
             // 
             // frmAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(388, 366);
+            this.ClientSize = new System.Drawing.Size(504, 437);
             this.Controls.Add(this.btnAdminSalir);
             this.Controls.Add(this.btnEliminarReserva);
             this.Controls.Add(this.btnCrearNuevaReserva);
             this.Controls.Add(this.btnConsultarDisponibilidad);
             this.Controls.Add(this.btnConsultarReserva);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmAdministrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";

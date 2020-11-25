@@ -88,7 +88,7 @@ namespace AdminReservasHotel.Controller
 
                 if (!BuscarData.BuscarHuesped(dni)) //Si no existe un huesped con el dni ingresado
                 {
-                    Huesped huesp = new Huesped(nombre, apellido, dni, correo, fecha_nacimiento);
+                    Huesped huesp = new Huesped(nombre, apellido, correo, dni, fecha_nacimiento);
 
                     Reserva res = new Reserva(f_ingreso, f_salida, cant_personas, pagado);                    
                     res.asociarHuesped(huesp);

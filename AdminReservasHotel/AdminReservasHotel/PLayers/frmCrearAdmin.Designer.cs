@@ -59,9 +59,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 14);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 17);
+            this.label1.Size = new System.Drawing.Size(305, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Creacion de un nuevo administrador:";
             // 
@@ -184,9 +185,9 @@
             this.groupBoxNuevoAdmin.Controls.Add(this.label9);
             this.groupBoxNuevoAdmin.Controls.Add(this.label8);
             this.groupBoxNuevoAdmin.Location = new System.Drawing.Point(72, 262);
-            this.groupBoxNuevoAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxNuevoAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxNuevoAdmin.Name = "groupBoxNuevoAdmin";
-            this.groupBoxNuevoAdmin.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxNuevoAdmin.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxNuevoAdmin.Size = new System.Drawing.Size(464, 261);
             this.groupBoxNuevoAdmin.TabIndex = 24;
             this.groupBoxNuevoAdmin.TabStop = false;
@@ -194,10 +195,10 @@
             // 
             // txtClaveNueva
             // 
-            this.txtClaveNueva.Location = new System.Drawing.Point(159, 167);
+            this.txtClaveNueva.Location = new System.Drawing.Point(179, 167);
             this.txtClaveNueva.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtClaveNueva.Name = "txtClaveNueva";
-            this.txtClaveNueva.Size = new System.Drawing.Size(221, 22);
+            this.txtClaveNueva.Size = new System.Drawing.Size(261, 22);
             this.txtClaveNueva.TabIndex = 33;
             // 
             // dateTimeNacimiento
@@ -208,7 +209,7 @@
             this.dateTimeNacimiento.MaxDate = new System.DateTime(2020, 11, 18, 0, 0, 0, 0);
             this.dateTimeNacimiento.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimeNacimiento.Name = "dateTimeNacimiento";
-            this.dateTimeNacimiento.Size = new System.Drawing.Size(263, 22);
+            this.dateTimeNacimiento.Size = new System.Drawing.Size(261, 22);
             this.dateTimeNacimiento.TabIndex = 32;
             this.dateTimeNacimiento.Value = new System.DateTime(2020, 11, 16, 0, 0, 0, 0);
             // 
@@ -247,7 +248,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(55, 167);
+            this.label13.Location = new System.Drawing.Point(77, 167);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(94, 17);
             this.label13.TabIndex = 27;
@@ -304,7 +305,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(612, 599);
+            this.ClientSize = new System.Drawing.Size(603, 592);
             this.Controls.Add(this.groupBoxNuevoAdmin);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label7);

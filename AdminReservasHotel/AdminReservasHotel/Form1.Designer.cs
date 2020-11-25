@@ -39,10 +39,10 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(79, 192);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresar.Location = new System.Drawing.Point(105, 236);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(114, 49);
+            this.btnIngresar.Size = new System.Drawing.Size(152, 60);
             this.btnIngresar.TabIndex = 1;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -51,10 +51,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 18F);
+            this.label1.Location = new System.Drawing.Point(46, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 13);
+            this.label1.Size = new System.Drawing.Size(267, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "Como desea ingresar?";
             // 
@@ -62,9 +62,11 @@
             // 
             this.groupBox1.Controls.Add(this.radioBtnHuesped);
             this.groupBox1.Controls.Add(this.radioBtnAdmin);
-            this.groupBox1.Location = new System.Drawing.Point(68, 73);
+            this.groupBox1.Location = new System.Drawing.Point(91, 90);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(141, 100);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(188, 123);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opciones";
@@ -72,9 +74,10 @@
             // radioBtnHuesped
             // 
             this.radioBtnHuesped.AutoSize = true;
-            this.radioBtnHuesped.Location = new System.Drawing.Point(25, 63);
+            this.radioBtnHuesped.Location = new System.Drawing.Point(33, 78);
+            this.radioBtnHuesped.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioBtnHuesped.Name = "radioBtnHuesped";
-            this.radioBtnHuesped.Size = new System.Drawing.Size(68, 17);
+            this.radioBtnHuesped.Size = new System.Drawing.Size(86, 21);
             this.radioBtnHuesped.TabIndex = 1;
             this.radioBtnHuesped.TabStop = true;
             this.radioBtnHuesped.Text = "Huesped";
@@ -84,9 +87,10 @@
             // radioBtnAdmin
             // 
             this.radioBtnAdmin.AutoSize = true;
-            this.radioBtnAdmin.Location = new System.Drawing.Point(25, 30);
+            this.radioBtnAdmin.Location = new System.Drawing.Point(33, 37);
+            this.radioBtnAdmin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radioBtnAdmin.Name = "radioBtnAdmin";
-            this.radioBtnAdmin.Size = new System.Drawing.Size(88, 17);
+            this.radioBtnAdmin.Size = new System.Drawing.Size(116, 21);
             this.radioBtnAdmin.TabIndex = 0;
             this.radioBtnAdmin.TabStop = true;
             this.radioBtnAdmin.Text = "Administrador";
@@ -95,9 +99,10 @@
             // 
             // btnCerrarPrograma
             // 
-            this.btnCerrarPrograma.Location = new System.Drawing.Point(93, 257);
+            this.btnCerrarPrograma.Location = new System.Drawing.Point(124, 316);
+            this.btnCerrarPrograma.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrarPrograma.Name = "btnCerrarPrograma";
-            this.btnCerrarPrograma.Size = new System.Drawing.Size(88, 35);
+            this.btnCerrarPrograma.Size = new System.Drawing.Size(117, 43);
             this.btnCerrarPrograma.TabIndex = 4;
             this.btnCerrarPrograma.Text = "Cerrar Programa";
             this.btnCerrarPrograma.UseVisualStyleBackColor = true;
@@ -105,15 +110,15 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(270, 304);
+            this.ClientSize = new System.Drawing.Size(360, 374);
             this.Controls.Add(this.btnCerrarPrograma);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnIngresar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control de Reservas";
