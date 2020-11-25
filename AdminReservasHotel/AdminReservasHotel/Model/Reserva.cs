@@ -23,6 +23,13 @@ namespace AdminReservasHotel.Model
             this.pagado = pagado;
         }
 
+        public DateTime Fecha_ingreso { get => fecha_ingreso;}
+        public DateTime Fecha_salida { get => fecha_salida;}
+        public int Cant_personas { get => cant_personas;}
+        public bool Pagado { get => pagado;}
+        internal Habitacion Habitacion { get => habitacion;}
+        internal Huesped Titular_reserva { get => titular_reserva;}
+
         public void agregarHabitacion(Habitacion hab)
         {
             this.habitacion = hab;

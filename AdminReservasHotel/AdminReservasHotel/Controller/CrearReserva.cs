@@ -14,12 +14,14 @@ namespace AdminReservasHotel.Controller
         public void creadorReserva(frmCrearReserva form)
         {
             bool validado = true;
+            bool validar_fecha = true;
 
             //Datos de la reserva
             DateTime f_ingreso = form.dtpFechaIngreso.Value;
             DateTime f_salida = form.dtpFechaSalida.Value;
             int cant_personas = Convert.ToInt32(form.pickerCantPersonas.Value);
             bool pagado = form.rbPagAhora.Checked;
+            string num_habitacion = form.cbHabitaciones.Text;
 
             //Datos del huesped
             string nombre = "";
@@ -28,7 +30,7 @@ namespace AdminReservasHotel.Controller
             string correo = "";
             DateTime fecha_nacimiento = form.dtpFechaNacim.Value;
 
-            #region VALIDANDO CAMPOS DE TEXTBOXS
+            #region VALIDANDO CAMPOS
             if (form.txtNombre.Text.Length == 0)
             {
                 form.txtNombre.BackColor = System.Drawing.Color.Orange;
@@ -72,20 +74,24 @@ namespace AdminReservasHotel.Controller
                 correo = form.txtCorreo.Text;
                 form.txtCorreo.BackColor = System.Drawing.Color.White;
             }
+
+            if(f_ingreso > f_salida)
+            {
+                validar_fecha = false;                
+            }
+
+            
             #endregion
 
             //Creamos los objetos
-            if (validado) {
+            if (validado && validar_fecha) {
 
-                if (!BuscarData.BuscarHuesped(dni))
+                if (!BuscarData.BuscarHuesped(dni)) //Si no existe un huesped con el dni ingresado
                 {
                     Huesped huesp = new Huesped(nombre, apellido, dni, correo, fecha_nacimiento);
 
-                    Reserva res = new Reserva(f_ingreso, f_salida, cant_personas, pagado);
-                    //res.agregarHabitacion(hab);
+                    Reserva res = new Reserva(f_ingreso, f_salida, cant_personas, pagado);                    
                     res.asociarHuesped(huesp);
-
-                    string num_habitacion = form.cbHabitaciones.Text;
 
                     //Convertimos el booleano en entero para pasarlo como parametro e insertarlo en la base de datos
                     int conversion_pagado;
@@ -95,8 +101,8 @@ namespace AdminReservasHotel.Controller
                         conversion_pagado = 0;
 
                     //Insertamos los datos de la reserva en la base de datos
-                    InsertData.insertarReserva(f_ingreso, f_salida, num_habitacion, dni, cant_personas, conversion_pagado);                    
-                    InsertData.insertarHuesped(nombre, apellido, dni, correo, fecha_nacimiento, BuscarData.BuscarIdReserva(dni));
+                    InsertData.insertarReserva(res.Fecha_ingreso, res.Fecha_salida, num_habitacion, huesp.Dni, res.Cant_personas, conversion_pagado);                    
+                    InsertData.insertarHuesped(huesp.Nombre, huesp.Apellido, huesp.Dni, huesp.Correo, huesp.Fecha_nacimiento, BuscarData.BuscarIdReserva(dni));
                 }
                 else
                 {
@@ -105,7 +111,15 @@ namespace AdminReservasHotel.Controller
             }
             else
             {
-                MessageBox.Show("Debe llenar todos los campos para crear la reserva", "Datos Incompletos");
+                if (!validado && !validar_fecha)
+                    MessageBox.Show("Debe llenar todos los campos para crear la reserva. \nLa fecha de ingreso no puede ser luego de la fecha de salida", "Datos Incompletos");
+                else { 
+                    if(!validado)
+                        MessageBox.Show("Debe llenar todos los campos para crear la reserva", "Datos Incompletos");
+                
+                    if(!validar_fecha)
+                        MessageBox.Show("La fecha de ingreso no puede ser luego de la fecha de salida", "Error de fechas");
+                }
             }
         }
     }

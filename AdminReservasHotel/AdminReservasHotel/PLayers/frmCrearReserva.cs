@@ -32,8 +32,12 @@ namespace AdminReservasHotel.PLayers
         private void frmCrearReserva_Load(object sender, EventArgs e)
         {
             rbPagAhora.Checked = true;
+            
+        }
 
-            MostrarData.MostrarNumHabitacion(this);
+        private void pickerCantPersonas_ValueChanged(object sender, EventArgs e)
+        {
+            MostrarData.MostrarNumHabitacion(this, Convert.ToInt32(pickerCantPersonas.Value));
         }
     }
 }

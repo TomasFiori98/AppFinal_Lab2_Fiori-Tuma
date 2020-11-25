@@ -83,7 +83,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(69, 72);
+            this.label4.Location = new System.Drawing.Point(53, 102);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
@@ -93,7 +93,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 95);
+            this.label5.Location = new System.Drawing.Point(17, 78);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 13);
@@ -264,10 +264,10 @@
             // 
             // pickerCantPersonas
             // 
-            this.pickerCantPersonas.Location = new System.Drawing.Point(136, 93);
+            this.pickerCantPersonas.Location = new System.Drawing.Point(137, 71);
             this.pickerCantPersonas.Margin = new System.Windows.Forms.Padding(2);
             this.pickerCantPersonas.Maximum = new decimal(new int[] {
-            8,
+            6,
             0,
             0,
             0});
@@ -284,6 +284,7 @@
             0,
             0,
             0});
+            this.pickerCantPersonas.ValueChanged += new System.EventHandler(this.pickerCantPersonas_ValueChanged);
             // 
             // groupBox1
             // 
@@ -355,7 +356,7 @@
             // cbHabitaciones
             // 
             this.cbHabitaciones.FormattingEnabled = true;
-            this.cbHabitaciones.Location = new System.Drawing.Point(136, 72);
+            this.cbHabitaciones.Location = new System.Drawing.Point(137, 99);
             this.cbHabitaciones.Margin = new System.Windows.Forms.Padding(2);
             this.cbHabitaciones.Name = "cbHabitaciones";
             this.cbHabitaciones.Size = new System.Drawing.Size(69, 21);

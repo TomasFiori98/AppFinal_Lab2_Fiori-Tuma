@@ -11,6 +11,8 @@ namespace AdminReservasHotel.Model
 
         private string clave;
 
+        public string Clave { get => clave;}
+
         public Administrador(string nombre, string apellido, string correo, string dni, DateTime fecha_nacimiento, string clave) : 
             base (nombre, apellido, correo, dni, fecha_nacimiento)
         {

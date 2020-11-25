@@ -28,6 +28,7 @@ namespace AdminReservasHotel.Controller
             DateTime fecha_nacimiento;
 
             //Se valida que los txtBox no estén vacios
+            #region VALIDANDO CAMPOS
             if (form.txtNombre.Text.Length == 0) {
                 form.txtNombre.BackColor = System.Drawing.Color.Orange;
                 validado = false;
@@ -81,6 +82,7 @@ namespace AdminReservasHotel.Controller
                 clave = form.txtClaveNueva.Text;
                 form.txtClaveNueva.BackColor = System.Drawing.Color.White;
             }
+            #endregion
 
             fecha_nacimiento = form.dateTimeNacimiento.Value;
             
@@ -89,7 +91,7 @@ namespace AdminReservasHotel.Controller
                 Administrador admin = new Administrador(nombre, apellido, correo, dni, fecha_nacimiento, clave);
 
                 //Insertamos los datos del administrador en la base de datos
-                InsertData.insertarAdministrador(nombre, apellido, dni, correo, fecha_nacimiento, clave);
+                InsertData.insertarAdministrador(admin.Nombre, admin.Apellido, admin.Dni, admin.Correo, admin.Fecha_nacimiento, admin.Clave);
 
                 //Limpiando los campos
                 form.txtNombre.Text = "";

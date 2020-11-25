@@ -13,10 +13,10 @@ namespace AdminReservasHotel.Controller
 {
     static class MostrarData
     {
-        public static void MostrarNumHabitacion(frmCrearReserva frm)
+        public static void MostrarNumHabitacion(frmCrearReserva frm, int cap)
         {
 
-            string sql = "SELECT * FROM habitaciones";
+            string sql = "SELECT * FROM habitaciones WHERE capacidad='" + cap + "'";
 
             MySqlConnection conexion = ConexionDataBase.generarConexion();
             conexion.Open();
