@@ -49,7 +49,7 @@
             // btnConsultarReserva
             // 
             this.btnConsultarReserva.Location = new System.Drawing.Point(121, 63);
-            this.btnConsultarReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsultarReserva.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsultarReserva.Name = "btnConsultarReserva";
             this.btnConsultarReserva.Size = new System.Drawing.Size(159, 40);
             this.btnConsultarReserva.TabIndex = 1;
@@ -60,7 +60,7 @@
             // btnConsultarDisponibilidad
             // 
             this.btnConsultarDisponibilidad.Location = new System.Drawing.Point(121, 107);
-            this.btnConsultarDisponibilidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsultarDisponibilidad.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsultarDisponibilidad.Name = "btnConsultarDisponibilidad";
             this.btnConsultarDisponibilidad.Size = new System.Drawing.Size(159, 40);
             this.btnConsultarDisponibilidad.TabIndex = 2;
@@ -71,7 +71,7 @@
             // btnCrearNuevaReserva
             // 
             this.btnCrearNuevaReserva.Location = new System.Drawing.Point(121, 152);
-            this.btnCrearNuevaReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCrearNuevaReserva.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrearNuevaReserva.Name = "btnCrearNuevaReserva";
             this.btnCrearNuevaReserva.Size = new System.Drawing.Size(159, 40);
             this.btnCrearNuevaReserva.TabIndex = 3;
@@ -82,7 +82,7 @@
             // btnEliminarReserva
             // 
             this.btnEliminarReserva.Location = new System.Drawing.Point(121, 197);
-            this.btnEliminarReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminarReserva.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarReserva.Name = "btnEliminarReserva";
             this.btnEliminarReserva.Size = new System.Drawing.Size(159, 40);
             this.btnEliminarReserva.TabIndex = 4;
@@ -92,10 +92,10 @@
             // 
             // btnAdminSalir
             // 
-            this.btnAdminSalir.Location = new System.Drawing.Point(176, 288);
-            this.btnAdminSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdminSalir.Location = new System.Drawing.Point(151, 286);
+            this.btnAdminSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdminSalir.Name = "btnAdminSalir";
-            this.btnAdminSalir.Size = new System.Drawing.Size(56, 19);
+            this.btnAdminSalir.Size = new System.Drawing.Size(73, 28);
             this.btnAdminSalir.TabIndex = 5;
             this.btnAdminSalir.Text = "Salir";
             this.btnAdminSalir.UseVisualStyleBackColor = true;
@@ -113,10 +113,10 @@
             this.Controls.Add(this.btnConsultarDisponibilidad);
             this.Controls.Add(this.btnConsultarReserva);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAdministrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAdministrador";
+            this.Text = "Administrador";
             this.ResumeLayout(false);
             this.PerformLayout();
 

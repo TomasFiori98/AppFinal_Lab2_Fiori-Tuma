@@ -97,6 +97,7 @@
     <Compile Include="Controller\CrearAdministrador.cs" />
     <Compile Include="Controller\DeleteData.cs" />
     <Compile Include="Controller\InsertData.cs" />
+    <Compile Include="Controller\MostrarData.cs" />
     <Compile Include="DataBase\ConexionDataBase.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

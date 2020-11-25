@@ -28,5 +28,12 @@ namespace AdminReservasHotel.PLayers
             CrearReserva crearRes = new CrearReserva();
             crearRes.creadorReserva(this);
         }
+
+        private void frmCrearReserva_Load(object sender, EventArgs e)
+        {
+            rbPagAhora.Checked = true;
+
+            MostrarData.MostrarNumHabitacion(this);
+        }
     }
 }

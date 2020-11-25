@@ -11,10 +11,9 @@ namespace AdminReservasHotel.Controller
 {
     class CrearReserva
     {
-        public void creadorReserva(frmCrearReserva form, Habitacion hab = null)
+        public void creadorReserva(frmCrearReserva form)
         {
             bool validado = true;
-            bool validadoBaseDatos = true;
 
             //Datos de la reserva
             DateTime f_ingreso = form.dtpFechaIngreso.Value;
@@ -86,7 +85,7 @@ namespace AdminReservasHotel.Controller
                     //res.agregarHabitacion(hab);
                     res.asociarHuesped(huesp);
 
-                    string num_habitacion = "4F";
+                    string num_habitacion = form.cbHabitaciones.Text;
 
                     //Convertimos el booleano en entero para pasarlo como parametro e insertarlo en la base de datos
                     int conversion_pagado;
@@ -109,6 +108,5 @@ namespace AdminReservasHotel.Controller
                 MessageBox.Show("Debe llenar todos los campos para crear la reserva", "Datos Incompletos");
             }
         }
-
     }
 }

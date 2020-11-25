@@ -253,5 +253,10 @@ namespace AdminReservasHotel.Controller
 
             return id;
         }
+
+        /*public static string BuscarNumHabitacion(frmCrearReserva form)
+        {
+
+        }*/
     }
 }

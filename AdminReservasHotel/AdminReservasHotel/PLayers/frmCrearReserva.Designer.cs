@@ -233,32 +233,34 @@
             this.dtpFechaNacim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaNacim.Location = new System.Drawing.Point(121, 115);
             this.dtpFechaNacim.Margin = new System.Windows.Forms.Padding(2);
-            this.dtpFechaNacim.MaxDate = new System.DateTime(2020, 11, 18, 0, 0, 0, 0);
+            this.dtpFechaNacim.MaxDate = new System.DateTime(2020, 11, 25, 0, 0, 0, 0);
             this.dtpFechaNacim.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpFechaNacim.Name = "dtpFechaNacim";
             this.dtpFechaNacim.Size = new System.Drawing.Size(153, 20);
             this.dtpFechaNacim.TabIndex = 21;
-            this.dtpFechaNacim.Value = new System.DateTime(2020, 11, 18, 0, 0, 0, 0);
+            this.dtpFechaNacim.Value = new System.DateTime(2020, 11, 25, 0, 0, 0, 0);
             // 
             // dtpFechaIngreso
             // 
             this.dtpFechaIngreso.Location = new System.Drawing.Point(99, 25);
             this.dtpFechaIngreso.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFechaIngreso.MaxDate = new System.DateTime(2025, 6, 30, 0, 0, 0, 0);
-            this.dtpFechaIngreso.MinDate = new System.DateTime(2020, 11, 22, 0, 0, 0, 0);
+            this.dtpFechaIngreso.MinDate = new System.DateTime(2020, 11, 25, 0, 0, 0, 0);
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
             this.dtpFechaIngreso.Size = new System.Drawing.Size(214, 20);
             this.dtpFechaIngreso.TabIndex = 22;
-            this.dtpFechaIngreso.Value = new System.DateTime(2020, 11, 22, 0, 0, 0, 0);
+            this.dtpFechaIngreso.Value = new System.DateTime(2020, 11, 25, 12, 6, 4, 0);
             // 
             // dtpFechaSalida
             // 
             this.dtpFechaSalida.Location = new System.Drawing.Point(99, 47);
             this.dtpFechaSalida.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpFechaSalida.MaxDate = new System.DateTime(2025, 6, 30, 0, 0, 0, 0);
+            this.dtpFechaSalida.MinDate = new System.DateTime(2020, 11, 26, 0, 0, 0, 0);
             this.dtpFechaSalida.Name = "dtpFechaSalida";
             this.dtpFechaSalida.Size = new System.Drawing.Size(214, 20);
             this.dtpFechaSalida.TabIndex = 23;
-            this.dtpFechaSalida.Value = new System.DateTime(2020, 11, 23, 0, 0, 0, 0);
+            this.dtpFechaSalida.Value = new System.DateTime(2020, 11, 26, 0, 0, 0, 0);
             // 
             // pickerCantPersonas
             // 
@@ -312,7 +314,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(317, 333);
+            this.groupBox2.Size = new System.Drawing.Size(317, 334);
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Llene el formuario para crear una nueva reserva: ";
@@ -372,6 +374,7 @@
             this.Name = "frmCrearReserva";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Reserva";
+            this.Load += new System.EventHandler(this.frmCrearReserva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pickerCantPersonas)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

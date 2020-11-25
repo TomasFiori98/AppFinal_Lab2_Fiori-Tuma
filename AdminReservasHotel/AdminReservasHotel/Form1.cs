@@ -44,7 +44,11 @@ namespace AdminReservasHotel
 
         private void btnCerrarPrograma_Click(object sender, EventArgs e)
         {
-            Close();
+            var resultado = MessageBox.Show("¿Desea cerrar el programa?", "Control de reservas", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+                Close();            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
